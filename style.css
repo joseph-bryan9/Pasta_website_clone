@@ -624,7 +624,7 @@ footer .payment-methods img {
   }
 
   .menu-list ul li:nth-child(6) {
-    display:block;
+    display: block;
     padding: 10px 30px;
   }
 
@@ -649,7 +649,6 @@ footer .payment-methods img {
   .main-content-section .card {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
-
   }
 
   .newsletter h1 {
@@ -670,65 +669,91 @@ footer .payment-methods img {
     width: 17%;
     display: block;
     margin-left: 18%;
-}
-
-footer {
-  padding: 60px 35px;
-}
-
-footer .footer-grid {
-  display: flex;
-  flex-direction: row;
-}
-
-footer .dropdown {
-  display: none;
-}
-
-footer #footer-menu-list {
-  display: flex;
-  flex-direction: column;
-}
-
-footer .payment-methods {
-  display: flex;
-  flex-direction: row;
-}
-
-footer .payment-methods p, img {
-  margin: 0;
-}
-
-footer .payment-methods p {
-  font-size: 14px;
-  font-weight: normal;
-  width: 60%;
-  /* padding: 25px 35px 20px; */
-}
-
-footer .payment-methods img {
-  /* height: auto; */
-}
-
-
-
-
-  /* .nav-menu {
-    padding: 16px 32px;
   }
 
-  
-
-  .menu-btn {
-    padding-left: 15px;
-    padding-top: 7px;
+  footer {
+    padding: 60px 35px;
   }
 
-  .banner-text {
-    top: 40vh;
+  footer .footer-grid {
+    display: flex;
+    flex-direction: row;
   }
 
-  .main-content-btn {
-    width: 55%; */
-  /* } */
+  footer .dropdown {
+    display: none;
+  }
 
+  footer #footer-menu-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  footer #footer-menu-list {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  footer #footer-menu-list .footer-menu {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+
+  footer #footer-menu-list li a {
+    color: var(--primary);
+    transition: 0.3s;
+  }
+
+  footer #footer-menu-list li a:hover {
+    color: #ab966f;
+    text-decoration: underline;
+  }
+
+  footer .social-medias {
+    padding-right: 0;
+  }
+
+  footer .follow-us-container {
+    margin-left: 25px;
+  }
+
+  footer .follow-us-container .follow-us {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  footer .follow-us-container .social-medias {
+    margin-left: 0;
+  }
+
+  footer .payment-methods {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .payment-methods p,
+  img {
+    margin: 0;
+    padding-top: 18px;
+  }
+
+  footer .payment-methods p {
+    font-size: 14px;
+    font-weight: normal;
+    width: 60%;
+  }
+
+  footer .payment-methods img {
+    /* height: auto; */
+  }
+}
+
+/* Desktops and larger screen styles */
+@media screen and (min-width: 992px) {
+}
