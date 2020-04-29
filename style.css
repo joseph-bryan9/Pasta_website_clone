@@ -67,7 +67,8 @@ body {
   margin: auto 0;
 }
 
-.menu-list {
+.menu-list,
+.menu-list-2 {
   display: none;
 }
 
@@ -888,7 +889,7 @@ footer .payment-methods img {
     display: block;
     margin-left: auto;
     margin-right: 10;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .banner-section img:first-child {
