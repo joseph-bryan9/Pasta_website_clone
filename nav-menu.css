@@ -1,0 +1,91 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.87;
+  background: #f1edec;
+  height: 100vh;
+}
+
+.overlay .closebtn-parent {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  background: #eddcbc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.overlay .closebtn-parent:hover {
+  background: #e0c592;
+}
+
+.overlay .closebtn-parent .closebtn {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.overlay .overlay-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay .overlay-content a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #eddcbc;
+  transition: 0.3s;
+}
+
+.overlay .overlay-content a:hover {
+  color: #ab966f;
+}
+
+.overlay .overlay-content a:nth-child(6) {
+  text-align: center;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.overlay .overlay-content a:nth-child(6):hover {
+  color: #ab966f;
+}
+
+.overlay .flex-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.overlay .flex-icons a:first-child,
+.overlay .flex-icons a:last-child {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 2px solid #5c5c5c;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #5c5c5c;
+  font-size: 12px;
+}
+
+.overlay .flex-icons a:last-child {
+  border: 2px solid #eddcbc;
+  color: #eddcbc;
+}
