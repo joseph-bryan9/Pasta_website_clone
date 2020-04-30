@@ -8,8 +8,33 @@
       Felicetti
     </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-menu.css" />
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <div class="closebtn-parent">
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNavigation()"
+          >&times;</a
+        >
+      </div>
+
+      <div class="overlay-content">
+        <a href="#">born at 1000 meters</a>
+        <a href="#">shop</a>
+        <a href="#">chefs</a>
+        <a href="#">activities</a>
+        <a href="#">recipes</a>
+        <a href="#">login</a>
+      </div>
+      <div class="grid-icons">
+        <a href="#">it</a>
+        <a href="#">en</a>
+      </div>
+    </div>
+
     <div class="container">
       <div class="nav-menu">
         <img src="assets/logo.png" class="logo" />
@@ -35,7 +60,7 @@
         <a href="#" alt="Cart Icon" class="cart-icon"></a>
         <div class="menu-btn">
           <!--Hamburger Menu here-->
-          <img src="assets/burger-menu.PNG" alt="" />
+          <img src="assets/burger-menu.PNG" alt="" onclick="showNavigation()" />
         </div>
       </div>
 
@@ -308,5 +333,16 @@
         </div>
       </footer>
     </div>
+
+    <!-- Fullscreen overlay nav-menu script -->
+    <script>
+      function showNavigation() {
+        document.getElementById("myNav").style.display = "block";
+      }
+
+      function closeNavigation() {
+        document.getElementById("myNav").style.display = "none";
+      }
+    </script>
   </body>
 </html>

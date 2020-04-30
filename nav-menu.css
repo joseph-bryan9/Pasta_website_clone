@@ -4,6 +4,8 @@
   opacity: 0.87;
   background: #f1edec;
   height: 100vh;
+  padding: 15px;
+  display: none;
 }
 
 .overlay .closebtn-parent {
@@ -16,6 +18,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  margin-left: auto;
 }
 
 .overlay .closebtn-parent:hover {
@@ -26,13 +29,14 @@
   text-align: center;
   text-decoration: none;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   color: #5c5c5c;
 }
 
 .overlay .overlay-content {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .overlay .overlay-content a {
@@ -41,7 +45,7 @@
   text-decoration: none;
   color: #5c5c5c;
   font-size: 14px;
-  padding: 10px;
+  padding: 13px 0;
   border-bottom: 1px solid #eddcbc;
   transition: 0.3s;
 }
@@ -57,25 +61,27 @@
   color: #5c5c5c;
   font-size: 14px;
   font-weight: bold;
-  padding: 10px;
+  padding: 13px 0;
 }
 
 .overlay .overlay-content a:nth-child(6):hover {
   color: #ab966f;
 }
 
-.overlay .flex-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
+.overlay .grid-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 30px 0;
+  justify-content: space-between;
 }
 
-.overlay .flex-icons a:first-child,
-.overlay .flex-icons a:last-child {
+.overlay .grid-icons a:first-child,
+.overlay .grid-icons a:last-child {
   position: relative;
-  width: 33px;
-  height: 33px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   border-radius: 50%;
   border: 2px solid #5c5c5c;
   text-decoration: none;
@@ -83,9 +89,12 @@
   text-align: center;
   color: #5c5c5c;
   font-size: 12px;
+  font-weight: bold;
+  justify-self: end;
 }
 
-.overlay .flex-icons a:last-child {
-  border: 2px solid #eddcbc;
-  color: #eddcbc;
+.overlay .grid-icons a:last-child {
+  border: 2px solid #c9b083;
+  color: #c9b083;
+  justify-self: start;
 }
