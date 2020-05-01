@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="nav-menu.css" />
   </head>
   <body>
+    <!-- Overlay Nav-menu -->
     <div id="myNav" class="overlay">
       <div class="closebtn-parent">
         <a
@@ -35,6 +36,7 @@
       </div>
     </div>
 
+    <!-- Monograno site Container -->
     <div class="container">
       <div class="nav-menu">
         <img src="assets/logo.png" class="logo" />
@@ -60,9 +62,16 @@
         <a href="#" alt="Cart Icon" class="cart-icon"></a>
         <div class="menu-btn">
           <!--Hamburger Menu here-->
-          <img src="assets/burger-menu.PNG" alt="" onclick="showNavigation()" />
+          <img
+            src="assets/burger-menu.PNG"
+            alt=""
+            class="burger-btn"
+            onclick="showNavigation()"
+          />
         </div>
       </div>
+      <!-- Spinner -->
+      <div class="spinner"></div>
 
       <!-- 1st Section -->
       <section class="banner-section">
@@ -81,11 +90,11 @@
           <p>flour</p>
           <p>with heaven</p>
         </div>
-        <!-- <img src="assets/clouds-03.png" alt="Big cloud" /> -->
       </section>
 
       <!-- 2nd Section -->
       <section class="main-content-section">
+        <div class="cloud-3"></div>
         <div class="first-section">
           <h1>enter monograno world</h1>
           <p>
@@ -333,16 +342,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Fullscreen overlay nav-menu script -->
-    <script>
-      function showNavigation() {
-        document.getElementById("myNav").style.display = "block";
-      }
-
-      function closeNavigation() {
-        document.getElementById("myNav").style.display = "none";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
