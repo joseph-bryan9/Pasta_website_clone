@@ -37,9 +37,7 @@ body {
 }
 
 .nav-menu .logo {
-  /* background: url("assets/logo.png") no-repeat center center/cover; */
   width: 150px;
-  /* height: 35px; */
   opacity: 0.7;
 }
 
@@ -88,19 +86,6 @@ body {
   background-size: cover;
   position: absolute;
 }
-
-/* Cloud-1 img */
-/* .banner-section .cloud-1 {
-  background-image: url("assets/clouds-01.png");
-  min-height: 30vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: 3;
-} */
 
 /* Latemar img */
 .banner-section .latemar {
@@ -355,12 +340,6 @@ body {
 .card .product-cards .price-and-cart .cart-icon:hover {
   background: url("assets/cart-2.PNG") no-repeat;
 }
-
-/* .main-content-section .card .product-cards .price-and-cart .cart-icon {
-  background: url("assets/cart.PNG") no-repeat;
-  width: 40px;
-  margin-left: auto;
-} */
 
 /* Newsletter Section */
 .newsletter {
@@ -954,10 +933,6 @@ footer .payment-methods img {
     font-size: 14px;
     font-weight: normal;
     width: 60%;
-  }
-
-  footer .payment-methods img {
-    /* height: auto; */
   }
 }
 
