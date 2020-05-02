@@ -7,11 +7,12 @@
       Pasta online: long and short pasta. Spelt, khorasan, kamut - Monograno
       Felicetti
     </title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="nav-menu">
+      <div class="nav-menu" data-aos="fade">
         <img src="assets/logo.png" class="logo" />
         <!-- <a href="#" class="logo"></a> -->
 
@@ -40,7 +41,7 @@
       </div>
 
       <!-- 1st Section -->
-      <section class="banner-section">
+      <section class="banner-section" data-aos="fade">
         <!-- <img src="assets/sky.jpg" alt="sky" />
         <img src="assets/clouds-01.png" alt="cloud-1" /> -->
         <!-- <img src="assets/latemar.png" alt="latemar" /> -->
@@ -51,7 +52,7 @@
         <div class="latemar"></div>
         <div class="montagna"></div>
         <div class="cloud-2"></div>
-        <div class="banner-text">
+        <div class="banner-text" data-aos="fade-up">
           <p>kneading</p>
           <p>flour</p>
           <p>with heaven</p>
@@ -61,7 +62,7 @@
 
       <!-- 2nd Section -->
       <section class="main-content-section">
-        <div class="first-section">
+        <div class="first-section" data-aos="fade-up">
           <h1>enter monograno world</h1>
           <p>
             The highest quality pasta, made with the world's most exceptional
@@ -78,12 +79,12 @@
 
       3rd Section
       <section class="suggestion-section"> -->
-        <h1 class="today-suggestion">Today's suggestion</h1>
+        <h1 class="today-suggestion" data-aos="fade-up">Today's suggestion</h1>
 
         <!-- Card Section -->
         <div class="card">
           <!--Pasta 1-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -96,7 +97,7 @@
           </div>
 
           <!--Pasta 2-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -109,7 +110,7 @@
           </div>
 
           <!--Pasta 3-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -122,7 +123,7 @@
           </div>
 
           <!--Pasta 4-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -135,7 +136,7 @@
           </div>
 
           <!--Pasta 5-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -148,7 +149,7 @@
           </div>
 
           <!--Pasta 6-->
-          <div class="product-cards">
+          <div class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -161,7 +162,7 @@
           </div>
 
           <!--Pasta 7-->
-          <div id="hidden-cards" class="product-cards">
+          <div id="hidden-cards" class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -174,7 +175,7 @@
           </div>
 
           <!--Pasta 8-->
-          <div id="hidden-cards" class="product-cards">
+          <div id="hidden-cards" class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -187,7 +188,7 @@
           </div>
 
           <!--Pasta 9-->
-          <div id="hidden-cards" class="product-cards">
+          <div id="hidden-cards" class="product-cards" data-aos="fade-up">
             <div class="short-spiral-mac">
               <img src="#" alt="" />
             </div>
@@ -308,5 +309,15 @@
         </div>
       </footer>
     </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 500,
+        once: true,
+      });
+    </script>
   </body>
 </html>

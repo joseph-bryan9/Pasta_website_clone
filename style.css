@@ -74,6 +74,7 @@ body {
 
 .banner-section {
   position: relative;
+  height: 100vh;
 }
 
 /* Sky img */
@@ -154,8 +155,8 @@ body {
 }
 
 .banner-text {
-  position: absolute;
-  top: 45vh;
+  position: fixed;
+  top: 39vh;
   width: 100%;
   margin: 0 auto;
 }
@@ -971,6 +972,7 @@ footer .payment-methods img {
   .main-content-section .card {
     margin: 0 auto;
     width: 1250px;
+    margin-top: 100px;
   }
 
   .newsletter {
