@@ -6,3 +6,15 @@ function bannerTextdisplay() {
   }
 }
 window.onscroll = bannerTextdisplay;
+
+// Overlay Nav-menu
+// Fullscreen overlay nav-menu script
+function showNavigation() {
+  document.getElementById("myNav").style.display = "block";
+  document.querySelector(".container").style.display = "none";
+}
+
+function closeNavigation() {
+  document.getElementById("myNav").style.display = "none";
+  document.querySelector(".container").style.display = "block";
+}
