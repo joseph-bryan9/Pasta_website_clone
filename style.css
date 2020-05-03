@@ -261,6 +261,7 @@ body {
 .pasta-types img:nth-child(1) {
   position: absolute;
   width: 100%;
+  height: auto;
   display: block;
   top: 50%;
   left: 50%;
@@ -270,9 +271,29 @@ body {
   z-index: 3;
 }
 
+.pasta-types img:nth-child(1):hover {
+  transform: translatey(0);
+  animation: float 8s ease-in-out infinite;
+  top: -12%;
+  left: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(20px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(20px);
+  }
+}
+
 .pasta-types img:nth-child(2) {
   position: absolute;
   width: 100%;
+  height: auto;
   display: block;
   top: 50%;
   left: 50%;
@@ -285,6 +306,7 @@ body {
 .pasta-types img:nth-child(3) {
   position: absolute;
   width: 100%;
+  height: auto;
   display: block;
   top: 50%;
   left: 50%;
@@ -584,6 +606,11 @@ footer .payment-methods img {
 }
 
 /* Media Queries */
+@media screen and (min-width: 480px) {
+  .pasta-types {
+    height: 698px;
+  }
+}
 
 /* Small tablet styles */
 @media screen and (min-width: 767px) {
@@ -626,6 +653,10 @@ footer .payment-methods img {
 
   .main-content-section .goto-shop-btn {
     margin-bottom: 0;
+  }
+
+  .pasta-types {
+    height: 370px;
   }
 
   .today-suggestion {
