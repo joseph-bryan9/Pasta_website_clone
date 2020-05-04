@@ -192,6 +192,21 @@ body {
   position: absolute;
 }
 
+/* Cloud-1 img */
+.banner-section .cloud-1 {
+  background-image: url("assets/clouds-01.png");
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center 33.5%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
 /* Latemar img */
 .banner-section .latemar {
   background-image: url("assets/latemar.png");
@@ -204,7 +219,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Montagna img */
@@ -213,11 +228,11 @@ body {
   min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background-position: center bottom;
+  background-position: center 104.5%;
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
 }
 
 /* Cloud-2 img */
@@ -225,8 +240,8 @@ body {
   background-image: url("assets/clouds-02.png");
   min-height: 100vh;
   width: 100%;
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-attachment: scroll;
+  background-position: center 110%;
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -234,16 +249,16 @@ body {
 }
 
 /* Cloud-3 img */
-.banner-section .cloud-2 {
+.banner-section .cloud-3 {
   background-image: url("assets/clouds-03.png");
-
+  min-height: 100vh;
   width: 100%;
   background-attachment: scroll;
-  background-position: center bottom;
+  background-position: center 104.5%;
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  z-index: 4;
+  z-index: 6;
 }
 
 .banner-text {
@@ -251,7 +266,7 @@ body {
   top: 39vh;
   width: 100%;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 5;
 }
 
 .banner-section .banner-text p {
@@ -915,6 +930,16 @@ footer .payment-methods img {
     padding-top: 0;
   }
 
+  /* Cloud-1 img */
+  .banner-section .cloud-1 {
+    background-position: center 24%;
+  }
+
+  /* Cloud-2 img */
+  .banner-section .cloud-2 {
+    background-position: center 100%;
+  }
+
   .menu-btn {
     display: none;
   }
@@ -1124,6 +1149,33 @@ footer .payment-methods img {
   .banner-section .banner-text p {
     font-size: 72px;
   }
+
+  /* Needs to be fix */
+  /* Cloud-1 img */
+  .banner-section .cloud-1 {
+    background-position: center 5%;
+  }
+
+  /* Latemar img */
+  .banner-section .latemar {
+    background-position: center 115%;
+  }
+
+  /* Montagna img */
+  .banner-section .montagna {
+    background-position: center 120%;
+  }
+
+  /* Cloud-2 img */
+  .banner-section .cloud-2 {
+    background-position: center 100%;
+  }
+
+  /* Cloud-3 img */
+  .banner-section .cloud-3 {
+    background-position: center 150%;
+  }
+  /* Needs to be fix */
 
   .main-content-section {
     padding-bottom: 150px;
